@@ -1,3 +1,6 @@
+#example
+# python write-excel_fixed_em_25w.py 201701
+
 import MySQLdb
 import sys, os, time
 import csv

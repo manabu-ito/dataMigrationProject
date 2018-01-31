@@ -1,4 +1,6 @@
 #coding: utf-8
+#example
+# python bigqueryTmp.py 200611 htl-datastore-prod dss_blog_old
 
 import MySQLdb
 import subprocess
