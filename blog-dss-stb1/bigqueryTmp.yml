@@ -1,0 +1,27 @@
+in:
+  type: mysql
+  host: blog-dss-stb1
+  port: 3306
+  user: dss
+  password: ""
+  database: dss
+  table: {{info.mysqltable}}
+  select: url, authorid, title, date, body, article_mod_date, commentnum, comment, comment_mod_date, trackbacknum, trackback, trackback_mod_date, imgnum, img, img_mod_date, linknum, link, link_mod_date, rps, rps_mod_date, rws, rws_mod_date, spam_body_duplicated, spam_body_duplicated_mod_date, splog_content, splog_content_mod_date, splog_copy, splog_copy_mod_date, inserted
+out:
+  type: bigquery
+  auth_method: json_key
+  json_keyfile: /home/buzz-setup/bin.wu/blog-dss-stb1/auth_prod.json
+  path_prefix: /home/buzz-setup/bin.wu/blog-dss-stb1/tmp/
+  file_ext: .json.gz
+  source_format: NEWLINE_DELIMITED_JSON
+  project: {{info.projectid}}
+  dataset: {{info.datasetname}}
+  auto_create_table: true # 自動でTBL生成
+  table: {{info.bigquerytable}}
+  schema_file: /home/buzz-setup/bin.wu/blog-dss-stb1/blog.json
+  encoders:
+  - {type: gzip}
+  allow_quoted_newlines: true
+  read_timeout_sec: 6000
+  open_timeout_sec: 6000
+  send_timeout_sec: 6000

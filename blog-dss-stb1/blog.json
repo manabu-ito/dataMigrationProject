@@ -1,0 +1,176 @@
+[
+    {
+        "name": "url",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "blog投稿のURL"
+    },
+    {
+        "name": "authorid",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "ユーザーネーム\nblog事業者名:{username}"
+    },
+    {
+        "name": "title",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "blog投稿のタイトル"
+    },
+    {
+        "name": "date",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED",
+        "description": "blogに投稿された日"
+    },
+    {
+        "name": "body",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "blog投稿の本文"
+    },
+    {
+        "name": "article_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED",
+        "description": "mysqlにデータが投入された日時"
+    },
+    {
+        "name": "commentnum",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "blog投稿についたコメントの数"
+    },
+    {
+        "name": "comment",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "blog投稿についたコメント"
+    },
+    {
+        "name": "comment_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "blog投稿にコメントが付いた直近の日時"
+    },
+    {
+        "name": "trackbacknum",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "blog投稿についたトラックバックの数"
+    },
+    {
+        "name": "trackback",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "blog投稿についたトラックバックの文字列"
+    },
+    {
+        "name": "trackback_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "blog投稿にトラックバックがついた直近の日時"
+    },
+    {
+        "name": "imgnum",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "blog投稿についた画像リンクの数"
+    },
+    {
+        "name": "img",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "blog投稿についた画像リンクの文字列"
+    },
+    {
+        "name": "img_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "blog投稿に画像リンクが記載された直近の日"
+    },
+    {
+        "name": "linknum",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "blog投稿についたリンク"
+    },
+    {
+        "name": "link",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "blog投稿についたリンクの文字列"
+    },
+    {
+        "name": "link_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "blog投稿にリンクが付いた直近の日"
+    },
+    {
+        "name": "rps",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "評判分析データ格納領域 (未使用)"
+    },
+    {
+        "name": "rps_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "評判分析更新Timestamp (未使用)"
+    },
+    {
+        "name": "rws",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": " 関連語分析データ格納領域 (未使用)"
+    },
+    {
+        "name": "rws_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "関連語分析更新Timestamp (未使用)"
+    },
+    {
+        "name": "spam_body_duplicated",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "本文重複スパム値 (未使用)"
+    },
+    {
+        "name": "spam_body_duplicated_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "本文重複スパム値更新Timestamp (未使用)"
+    },
+    {
+        "name": "splog_content",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "スパム判定データ格納領域"
+    },
+    {
+        "name": "splog_content_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "スパム判定データ更新Timestamp"
+    },
+    {
+        "name": "splog_copy",
+        "type": "FLOAT64",
+        "mode": "NULLABLE",
+        "description": "コピーフィルタ判定データ格納領域"
+    },
+    {
+        "name": "splog_copy_mod_date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "コピーフィルタ判定データ更新Timestamp"
+    },
+    {
+        "name": "inserted",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": "ブログ投稿のURLが最初に登録された日"
+    }
+]
